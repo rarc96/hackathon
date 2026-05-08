@@ -83,7 +83,8 @@ def make_per_field_decision(mp_score, spread_score, jim_score, tgv_score, jim_va
     manual_components = []
 
     if jim_score == 10 and tgv_score == 10:
-        manual_components.append('jim+tgv')
+        manual_components.append('jim')
+        manual_components.append('tgv')
 
     if jim_value_present:
         if jim_score > 8 or (jim_score > 6 and mp_score >= 2):

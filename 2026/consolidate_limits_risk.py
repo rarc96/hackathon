@@ -98,7 +98,7 @@ final['Order_Value'] = final.apply(lambda row: safe_float(row['Limit']) * get_qt
 
 # Now prepare your output columns as before
 output_columns = [
-    'Status', 'Ordertyp', 'WKN', 'Limit', 'Nom', 'ANom', 'Order_Value',
+    'Status', 'Ordertyp', 'WKN', 'Limit', 'Nom', 'ANom', 'Order_Value','Verursacher',
     'Timestamp', # Change this to your actual column if needed!
     'JIM_Value', 'Spread_Prozentual', 'Target_Market_Count', 'Tradegate_Volume',
     'Risk Score', 'Decision', 'Reasons', 'jim_risk', 'spread_risk', 'mp_risk', 'tgv_risk'
